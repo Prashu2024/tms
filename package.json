@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
   "dev": "next dev",
-  "build": "prisma generate && prisma db push && next build",
+  "build": "prisma generate && prisma db push && npm run seed && next build",
   "start": "next start",
   "lint": "eslint",
   "seed": "ts-node --compiler-options '{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' prisma/seed.ts",
-  "postinstall": "prisma generate && prisma db push"
+  "postinstall": "prisma generate && prisma db push && npm run seed"
 },
 "prisma": {
   "seed": "ts-node --compiler-options '{\"module\":\"CommonJS\",\"moduleResolution\":\"node\"}' prisma/seed.ts"

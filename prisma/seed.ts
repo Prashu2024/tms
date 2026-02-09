@@ -25,7 +25,7 @@ async function main() {
 
     console.log('Created default admin user:', admin.email)
   } else {
-    console.log('Admin user already exists')
+    console.log('Admin user already exists, skipping seeding')
   }
 
   console.log('Seeding finished.')
