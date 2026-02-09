@@ -1,10 +1,12 @@
 # Task Management System (TMS)
 
-A  full-stack Task Management System built with Next.js, TypeScript, Tailwind CSS, Prisma ORM, and SQLite. This application supports multiple users, role-based access control, project management, and task tracking with a clean, responsive UI.
+A full-stack Task Management System built with Next.js, TypeScript, Tailwind CSS, Prisma ORM, and SQLite. This application supports multiple users, role-based access control, project management, and task tracking with a clean, responsive UI.
 
 ## Live Demo
 
-[Add your deployed URL here]
+**Deployed Application:** https://tms-a0y2.onrender.com
+
+**GitHub Repository:** https://github.com/Prashu2024/tms
 
 **Default Admin Account:**
 - Email: admin@example.com
@@ -232,6 +234,8 @@ Render will automatically:
 The following environment variables are automatically configured:
 - `DATABASE_URL`: Set to `file:./dev.db` for SQLite
 - `NODE_ENV`: Set to `production`
+- `NEXTAUTH_SECRET`: Auto-generated secure secret
+- `NEXTAUTH_URL`: Set to your Render deployment URL automatically
 
 #### Important Notes for SQLite on Render
 - Database file is stored in the deployment container

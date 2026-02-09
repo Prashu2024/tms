@@ -11,3 +11,7 @@ services:
         value: production
       - key: DATABASE_URL
         value: file:./dev.db
+      - key: NEXTAUTH_SECRET
+        generateValue: true
+      - key: NEXTAUTH_URL
+        value: https://$RENDER_EXTERNAL_HOSTNAME
