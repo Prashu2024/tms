@@ -1,0 +1,22 @@
+node_modules
+# Keep environment variables out of version control
+.env_deploy
+
+# Database
+*.db
+*.db-journal
+
+# Generated files
+/generated/prisma
+
+# Build output
+.next
+out
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
